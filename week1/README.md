@@ -176,46 +176,7 @@ The report is limited to the selected ATLAS descriptions and mappings. It is a f
 
 **Increment conclusion:** Week 1 establishes the terminology, threat categories, and case-based justification for investigating malicious AI artifacts. The next increment can build a collection plan around these categories without presenting planned collection as completed work.
 
-## 10. Group defense outline — 7 minutes 30 seconds
-
-This is a proposed presentation plan, not a record of a completed defense.
-
-| Time | What to explain |
-|---|---|
-| 0:00–0:45 | State the project topic, research question, and Week 1 boundary. |
-| 0:45–1:45 | Explain tactic, technique, and procedure using the main case. |
-| 1:45–3:00 | Compare model artifacts, datasets, and software dependencies; distinguish threat sources from intelligence sources. |
-| 3:00–4:30 | Present the Hugging Face case and explain the three selected ATLAS mappings. |
-| 4:30–5:15 | Contrast the PyTorch incident with the GGUF research exercise. |
-| 5:15–6:15 | Walk through the diagram and identify the victim action at each stage. |
-| 6:15–7:00 | Explain the main findings and the limits of the available evidence. |
-| 7:00–7:30 | Show the Week 1 repository increment and summarize the next collection objective. |
-
-## 11. Repository transparency
-
-**Intended repository path:** `week1/README.md`.
-
-After reviewing the document, run the following from the existing project repository:
-
-```bash
-# Review and stage the actual Week 1 document.
-git status
-git add week1/README.md
-git diff --cached
-
-# Record and publish the reviewed increment.
-git commit -m "docs(week1): add ATLAS glossary and threat classification"
-git push
-
-# Display the real history for this increment.
-git log --oneline -- week1/README.md
-```
-
-These commands are submission instructions; their inclusion does not mean that a commit or upload has already occurred. Record subsequent substantive corrections in further commits when those edits are made.
-
-**Preparation note:** AI assistance was used to draft and organize this document. Group members must review the cited records, understand the analysis, and follow the instructor's rules on permitted assistance before submitting or defending the report.
-
-## 12. References — MITRE ATLAS only
+## 10. References — MITRE ATLAS only
 
 The technical source of record is the official MITRE ATLAS dataset pinned to release `v2026.09`. Links below point to the official repository and the relevant records or relationship sections. The [MITRE ATLAS website][ATLAS] provides the corresponding knowledge-base interface.
 
