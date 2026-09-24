@@ -160,23 +160,8 @@ No concrete indicators of compromise are supplied. For example, the main case's 
 
 The report is limited to the selected ATLAS descriptions and mappings. It is a foundation for later collection and detection work, not an independently reproduced investigation.
 
-## 9. Week 1 deliverables
 
-| Deliverable | Location in this README |
-|---|---|
-| Project objective and bounded scope | Section 1 |
-| Source basis and interpretation rules | Section 2 |
-| Glossary of key CTI and project terms | Section 3 |
-| Classification of threat types and their sources | Section 4 |
-| Application to documented ATLAS cases | Sections 5–6 |
-| Visual explanation of the selected attack path | Section 7 |
-| Findings and evidence limitations | Section 8 |
-| Defense outline and repository recording instructions | Sections 10–11 |
-| Traceable official sources | Section 12 |
-
-**Increment conclusion:** Week 1 establishes the terminology, threat categories, and case-based justification for investigating malicious AI artifacts. The next increment can build a collection plan around these categories without presenting planned collection as completed work.
-
-## 10. References — MITRE ATLAS only
+## 9. References — MITRE ATLAS only
 
 The technical source of record is the official MITRE ATLAS dataset pinned to release `v2026.09`. Links below point to the official repository and the relevant records or relationship sections. The [MITRE ATLAS website][ATLAS] provides the corresponding knowledge-base interface.
 
