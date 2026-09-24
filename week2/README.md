@@ -9,7 +9,7 @@
 
 > **Result:** Four documented cases, 14 selected ATLAS mappings, 12 historical observable records, eight published measurement rows, and five original source figures. This is a public-source investigation, not a live scan or an attack demonstration performed by the group.
 
-[Collection results](#5-collected-cases) · [Original published graph](#6-published-graph-and-measurement-data) · [Dataset](data/observables.csv) · [Source register](data/sources.csv) · 
+[Collection results](#5-collected-cases) · [Original published graph](#6-published-graph-and-measurement-data) · [Dataset](data/observables.csv) · [Source register](data/sources.csv) 
 
 ## 1. Objective and continuity
 
