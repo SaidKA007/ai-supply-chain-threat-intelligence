@@ -1,0 +1,18 @@
+{
+  "project": "Detection and Threat Intelligence Analysis of AI Supply Chain Threats Using MITRE ATLAS",
+  "week": 2,
+  "collected_on": "2026-09-24",
+  "atlas_release": "v2026.09",
+  "paper_revision": "2602.04653v4",
+  "counts": {
+    "cases": 4,
+    "technical_source_resources": 7,
+    "selected_atlas_mappings": 14,
+    "observable_records": 12,
+    "published_metric_rows": 8,
+    "original_source_figures": 5
+  },
+  "method": "AI-assisted public-source research and manual transcription; local Python used for structuring and validation",
+  "network_activity": "Public report retrieval only; no interaction with reported suspect infrastructure",
+  "submission_status": "Files prepared locally. GitHub upload, commit and oral defense not performed."
+}

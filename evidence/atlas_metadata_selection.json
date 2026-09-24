@@ -1,0 +1,46 @@
+{
+  "source_url": "https://raw.githubusercontent.com/mitre-atlas/atlas-data/v2026.09/dist/v6/ATLAS-2026.09.yaml",
+  "source_release": "v2026.09",
+  "collected_on": "2026-09-24",
+  "extraction": "Selected fields manually transcribed from the official source; not a full dataset download. Missing fields remain omitted.",
+  "records": [
+    {
+      "id": "AML.CS0031",
+      "name": "Malicious Models on Hugging Face",
+      "type": "Incident",
+      "actor": "Unknown",
+      "target": "Hugging Face users",
+      "date": "2025-02-25",
+      "date-granularity": "Year",
+      "reporter": "ReversingLabs"
+    },
+    {
+      "id": "AML.CS0015",
+      "name": "Compromised PyTorch Dependency Chain",
+      "type": "Incident",
+      "actor": "Unknown",
+      "target": "PyTorch",
+      "date": "2022-12-25",
+      "date-granularity": "Day",
+      "reporter": "PyTorch"
+    },
+    {
+      "id": "AML.CS0064",
+      "name": "Poisoned GGUF Templates: Inference-Time Supply Chain Attack",
+      "type": "Exercise",
+      "actor": "Pillar Security, Fujitsu Research of Europe",
+      "target": "Model registries distributing models in GGUF format",
+      "date": "2025-06-01",
+      "date-granularity": "Month"
+    },
+    {
+      "id": "AML.CS0065",
+      "name": "Model Namespace Reuse Supply Chain Attack",
+      "type": "Exercise",
+      "actor": "Unit 42 Researchers",
+      "target": "Users of Hugging Face-backed model catalogs, code pipelines, and cloud integrations",
+      "date": "2025-09-03",
+      "date-granularity": "Day"
+    }
+  ]
+}

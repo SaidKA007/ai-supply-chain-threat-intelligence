@@ -1,0 +1,8 @@
+Week 2 — local dataset validation
+PASS: 7 source resources; 4 cases; 14 mappings; 12 observations; 8 measurement rows; 5 figures.
+PASS: Source/case references, 2 Incident + 2 Exercise labels, and selected ATLAS identifiers.
+PASS: CSV/JSON agree; hash and IPv4 syntax; wildcard preservation; 8 candidates + 4 context records.
+PASS: Every observation retains unknown first_seen, unassessed current status, and to_ids=false.
+PASS: Published metric units and ownership retained; reported Average not recomputed.
+PASS: Five original figure references, internal Markdown links, and source-map consistency.
+RESULT: Structural validation passed. No network requests, threat scans, or experimental replication performed.

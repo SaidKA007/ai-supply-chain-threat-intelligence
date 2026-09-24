@@ -1,0 +1,25 @@
+flowchart TD
+    A["S01: MITRE ATLAS v2026.09<br/>case IDs, types and official mappings"]
+    B["S02: ReversingLabs<br/>C01 historical observables"]
+    C["S03: PyTorch disclosure<br/>C02 historical observables"]
+    D["S04-S06: Pillar / Fujitsu research<br/>C03 figures and published measurements<br/>one related evidence family"]
+    E["S07: Unit 42<br/>C04 controlled demonstration"]
+    F["Source register and provenance checks"]
+    G["4 curated case records<br/>14 selected ATLAS mappings"]
+    H["12 public observable records<br/>8 published measurement rows"]
+    I["README, source figures, evidence notes"]
+    J["Week 3: planned validation, normalization<br/>and controlled MISP import"]
+    A --> B
+    A --> C
+    A --> D
+    A --> E
+    B --> F
+    C --> F
+    D --> F
+    E --> F
+    A --> G
+    F --> G
+    F --> H
+    G --> I
+    H --> I
+    I -. planned, not completed .-> J
