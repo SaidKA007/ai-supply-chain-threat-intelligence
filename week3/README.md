@@ -40,7 +40,7 @@ Structured CSV / JSON output + charts
 
 The executed notebook is available here:
 
-[`week3_data_processing.ipynb`](week3_data_processing.(1)ipynb)
+[`week3_data_processing.(1)ipynb`](week3_data_processing.(1)ipynb)
 
 ---
 
