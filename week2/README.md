@@ -32,7 +32,6 @@ Unlike the ATLAS-only Week 1 increment, this collection follows ATLAS references
 | Document the increment with text and visuals | Five original source figures, case analysis, datasets, and collection notes. |
 | Maintain weekly GitHub transparency; defend the increment | Submission instructions and a proposed 7-minute-30-second defense are included. The actual commit and defense remain submission actions. |
 
-The instructor has permitted alternatives to the tools listed in the syllabus, as communicated by the group. This increment uses public-document inspection and local Python data checks. **No Shodan, VirusTotal, or Maltego session was conducted for this project.** A publisher's screenshot mentioning a scanner is not evidence that the group used that scanner.
 
 ## 2. Collection scope and method
 
@@ -236,44 +235,9 @@ Further source-specific issues, including the paper's inconsistent image alterna
 
 Week 3 can validate and normalize the historical candidates, assess context and freshness, and prepare a controlled MISP import. The wildcard pattern, path placeholder, and repository identifiers need deliberate representation rather than automatic conversion into blocking indicators. The current package provides the source trail for those decisions; it does not claim to have completed them.
 
-## 10. Repository, validation, and defense
 
-```text
-week2/
-├── README.md
-├── THIRD_PARTY_NOTICES.md
-├── data/                 # sources, cases, mappings, observations, published metrics
-├── docs/                 # data dictionary, source map, defense and upload guide
-├── evidence/             # collection log, selected metadata, validation result
-├── images/               # original-image manifest and preservation instructions
-└── scripts/              # local validator and optional image downloader
-```
 
-Run the structural check from the repository root; no external Python packages or network access are required:
-
-```bash
-python week2/scripts/validate_dataset.py
-```
-
-The [recorded validation output](evidence/validation.txt) comes from an actual local run. An optional [image-preservation helper](scripts/fetch_images.py) is included; the README already embeds the original images and does not require it for online viewing.
-
-After reviewing the increment, commit it in the real project repository:
-
-```bash
-git status
-git add week2/
-git diff --cached --stat
-git commit -m "docs(week2): add sourced OSINT collection and evidence"
-git push
-```
-
-The [upload guide](docs/upload_guide.md) includes the browser workflow. Upload the **whole `week2` folder**, not just this README. Make further commits when genuine changes occur; do not fabricate earlier activity. GitHub upload, commit history, and oral defense have not been performed by preparing this package.
-
-The [defense notes](docs/defense.md) provide a 7-minute-30-second presentation plan, a speaking draft, and likely questions. Use the README and local CSV files during the defense; explain source evidence and limitations rather than claiming to have reproduced the publishers' scans.
-
-**Preparation note:** AI assistance was used for source discovery, transcription, organization, and drafting. The group must review the sources and analysis, understand the dataset, and comply with the instructor's rules on permitted assistance before submission.
-
-## 11. References
+## 10. References
 
 All technical sources below were accessed on **24 September 2026**. Image attribution and licence details are also recorded in [third-party notices](THIRD_PARTY_NOTICES.md) and the [image manifest](images/manifest.json).
 
@@ -285,7 +249,6 @@ All technical sources below were accessed on **24 September 2026**. Image attrib
 - **[S06] Same authors and paper.** Version 4 PDF. Figure 3 and Table 2 on PDF page 6; Figures 5–6 on page 10; Figure 7 on page 11. Same research as S05.
 - **[S07] Palo Alto Networks Unit 42.** *Model Namespace Reuse: An AI Supply-Chain Attack Exploiting Model Name Trust*. Original report linked by `AML.CS0065`; Figures 5–6. Its publication date was not transcribed, so no separate article date is asserted.
 
-**Assignment basis:** the supplied *Introduction to Threat Hunting* syllabus, AY 2026–2027, Section 3.3, Week 2 row on PDF page 6, and the instructor's assignment statement provided by the group. The syllabus is not redistributed in this public project folder.
 
 [S01]: https://raw.githubusercontent.com/mitre-atlas/atlas-data/v2026.09/dist/v6/ATLAS-2026.09.yaml
 [S02]: https://www.reversinglabs.com/blog/rl-identifies-malware-ml-model-hosted-on-hugging-face
