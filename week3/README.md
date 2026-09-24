@@ -378,7 +378,7 @@ Additional case research and source documentation remain available in the Week 2
 
 ---
 
-## 16. Short defense summary
+## 16. Short summary
 
 For a short classroom demonstration, the Week 3 increment can be explained as:
 
