@@ -227,6 +227,35 @@ The [data dictionary](docs/data_dictionary.md) explains the fields and the diffe
 
 Further source-specific issues, including the paper's inconsistent image alternative text, are documented in [collection notes](evidence/collection_notes.md).
 
+### Use of AI assistance
+
+1. Reviewed the selected MITRE ATLAS case studies and their official case-to-technique relationships.
+
+2. Used AI assistance to help find, extract, summarize, and structure information from the cited public sources. The AI was used as a research and formatting aid, while the final dataset was organized around the referenced MITRE ATLAS records and original technical reports.
+
+3. With AI assistance, the collected information was structured into the following data files:
+   - `cases.csv`
+   - `cases.json`
+   - `atlas_mappings.csv`
+   - `observables.csv`
+   - `observables.json`
+   - `published_metrics.csv`
+   - `sources.csv`
+
+4. AI assistance was also used to help prepare and structure supporting documentation and research records, including:
+   - `docs/data_dictionary.md`
+   - `docs/source_map.mmd`
+   - `evidence/atlas_metadata_selection.json`
+   - `evidence/build_metadata.json`
+   - `evidence/collection_log.csv`
+   - `evidence/collection_notes.md`
+   - `evidence/validation.txt`
+
+5. AI was additionally used to improve the structure, readability, and organization of the README and other Markdown documentation.
+
+6. The collected records were checked against the cited sources and validated for identifiers, references, hash formats, and consistency between CSV and JSON representations.
+
+
 ## 9. Findings and Week 3 handoff
 
 **Collection finding:** the selected evidence concerns different points of trust: artifact contents, software dependency resolution, bundled prompt construction, and the identity behind a model namespace. Keeping those mechanisms separate makes the collection more useful than a flat list of names and hashes. This is a project synthesis of the cited cases. [S01]
