@@ -99,7 +99,7 @@ flowchart TD
     I -. planned, not completed .-> J
 ```
 
-**Text equivalent:** ATLAS identifies cases and mappings → originating reports provide observations and context → the paper contributes published figures and measurements → source and evidence checks produce the local datasets → later normalization and MISP work remain planned.
+**Text equivalent:** ATLAS identifies cases and mappings → originating reports provide observations and context → the paper contributes published figures and measurements → source and evidence checks produce the local datasets → later normalization and Google colab work remain planned.
 
 ## 5. Collected cases
 
