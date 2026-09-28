@@ -383,3 +383,15 @@ Additional case research and source documentation remain available in the Week 2
 For a short classroom demonstration, the Week 3 increment can be explained as:
 
 > During Week 2 we collected public threat-intelligence observations about AI supply-chain incidents. During Week 3 we processed these data in Google Colab. We cleaned and normalized the records, validated IOC syntax, separated IOC candidates from contextual information, enriched the indicators with case metadata, and correlated them with MITRE ATLAS techniques. From 12 raw observations, 8 were retained as valid historical IOC candidates and 4 as contextual records. The workflow produced reproducible CSV and JSON datasets, three visualizations, and automated quality checks.
+
+## 17. AI Assistance Disclosure
+
+Generative AI was used as a supporting tool during Week 3.
+
+AI assistance was used to:
+- help organize the collected research data into `observables.csv`, `cases.csv`, and `atlas_mappings.csv`;
+- assist with formatting and structuring the collected information;
+- help develop and debug the Python code used in the Google Colab notebook;
+- improve the workflow for data cleaning, normalization, validation, correlation, and export.
+
+All data, code, and final outputs were manually reviewed and checked before submission.
