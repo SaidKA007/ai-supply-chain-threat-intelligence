@@ -82,36 +82,7 @@ The unassigned rows are bounded assessments of the selected source material, not
 
 **C2 is deliberately tactic-only.** A reverse-shell label and callback address do not, by themselves, justify a specific protocol mapping. For example, **T1095 — Non-Application Layer Protocol** requires protocol-level evidence. It was reviewed but is **not assigned** in this dataset. [W4-S10][W4-S10] [W4-S11][W4-S11]
 
-## 7. Connection to the existing Week 2 and Week 3 data
-
-No new IOC collection or reputation lookup was performed. The local Week 2 files were inspected and only their C01 records were referenced:
-
-| Existing project records | Use in Week 4 |
-|---|---|
-| `OBS001`–`OBS004` | Link artifact-layer records to preparation and unsafe processing |
-| `OBS005`–`OBS006` | Link repository context to publication/staging |
-| `OBS007` | Link the recorded callback value to the C2 assessment |
-| `MAP01`–`MAP04` | Preserve the earlier AI-specific ATLAS context without treating it as an Enterprise ATT&CK crosswalk |
-
-The C01 subset contains **seven records: five historical IOC candidates and two contextual repository identifiers**. This is not seven affected hosts, seven attacks, or seven newly discovered indicators. The input-file fingerprints and record identities are documented in [the local provenance section](evidence/sources.md#local-project-evidence).
-
-The previous Week 2 mapping used an ATLAS snapshot labelled `v2026.09`. That exact remote snapshot could not be re-fetched during Week 4. A readable official legacy-format ATLAS record was used to check the case narrative; its older publication-technique identifier was **not substituted** into the previous dataset. Week 4's `T...` mappings are separately sourced from Enterprise ATT&CK. Details are in [version handling](evidence/sources.md#version-and-access-handling).
-
-## 8. Defensive questions produced by the analysis
-
-These are **proposed follow-up checks**, not implemented detections or measured defenses:
-
-| Area | Question for a later authorized investigation |
-|---|---|
-| Acquisition | Which repository, revision, and exact file digest were used? |
-| File inspection | Was inspection complete, or did unpacking/parsing fail? An error should not be treated as a safety verdict. |
-| Execution | Can a model-loading process be correlated with an unexpected interpreter/child process or network event? |
-| C2 | What protocol and process own the connection? Does the historical address still have relevant context? |
-| Evidence gaps | Is there any telemetry for reconnaissance, persistence, or completed objectives? |
-
-The value of Week 4 is that it tells us **where more evidence would be useful**. It does not transform the historical values into a current blocking list. No detection accuracy, recall, or false-positive rate is claimed.
-
-## 9. Findings and limitations
+## 7. Findings and limitations
 
 **Finding:** the useful reconstruction is a partially evidenced supply-chain path, not a forced seven-stage success story. The analytical output contains seven assessed rows, five distinct technique/sub-technique IDs, and one tactic-only C2 mapping.
 
@@ -119,29 +90,8 @@ The value of Week 4 is that it tells us **where more evidence would be useful**.
 
 **AI assistance disclosure:** generative AI assisted with source discovery, explanation, ATT&CK comparison, documentation, CSV assembly, and layout of the source-based diagrams. This report does not claim independent experiments or independent authorship of the cited research. Group members must review the sources and understand the mapping decisions before defending the work.
 
-## 10. Group defense outline — 7 minutes 30 seconds
 
-| Time | What to show and explain |
-|---|---|
-| 0:00–0:45 | Project topic; Week 4 moves from indicator processing to attack-stage analysis. |
-| 0:45–1:30 | Figure 1: seven stages and the meaning of an evidence gap. |
-| 1:30–2:30 | C01 summary; distinguish the outer archive, extracted Pickle, and hypothetical victim use. |
-| 2:30–4:30 | Walk through the stage table and Figure 2: why each selected ATT&CK mapping fits. |
-| 4:30–5:30 | Explain the three unassigned stages and why C2 has only a tactic mapping. |
-| 5:30–6:30 | Open the CSV and one source link; show the Week 2 observable references. |
-| 6:30–7:30 | Main finding, limitations, and the next evidence needed. |
-
-**Useful defense answers:**
-
-**Why are some stages empty?** “We reviewed all seven stages, but do not have evidence for every stage. Inventing an attacker action would weaken the analysis.”
-
-**Did MITRE publish this exact mapping?** “No. MITRE supplies the case record and technique definitions. The cross-framework comparison is our documented interpretation.”
-
-**Why both ATLAS and ATT&CK?** “ATLAS preserves the AI-specific case context from earlier weeks; Week 4 explicitly asks us to compare the case with Enterprise ATT&CK.”
-
-**Does a callback prove data theft?** “No. A control capability is not evidence that an objective was completed.”
-
-## 11. Files and GitHub submission
+## 8. Files and GitHub submission
 
 ```text
 week4/
@@ -165,7 +115,7 @@ docs(week4): add evidence-based kill chain and ATT&CK analysis
 
 Make this commit when the files are actually reviewed and uploaded. Do not backdate it or present a suggested command as a completed submission. Later substantive corrections should have their own commits.
 
-## 12. Sources
+## 9. Sources
 
 The full register, locators, version notes, local provenance, and image attribution are in **[`evidence/sources.md`](evidence/sources.md)**. Source IDs use a `W4-` prefix so they are not confused with the Week 2 source IDs.
 
