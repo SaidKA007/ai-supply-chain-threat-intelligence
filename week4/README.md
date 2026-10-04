@@ -130,3 +130,16 @@ The full register, locators, version notes, local provenance, and image attribut
 [W4-S09]: https://attack.mitre.org/techniques/T1059/006/
 [W4-S10]: https://attack.mitre.org/tactics/TA0011/
 [W4-S11]: https://attack.mitre.org/techniques/T1095/
+
+## AI Assistance Disclosure
+
+Generative AI was used to assist with this Week 4 assignment.
+
+AI was used to:
+- help find and summarize information from the selected sources;
+- organize the Cyber Kill Chain and MITRE ATT&CK mappings;
+- help structure and format the README;
+- generate the project diagrams based on the collected evidence;
+- help prepare the CSV mapping and supporting notes.
+
+The final report was based on the cited real sources, including MITRE ATT&CK, MITRE ATLAS, ReversingLabs, and Cyber Kill Chain materials. AI was used as a research and formatting assistant, not as the source of factual evidence.
