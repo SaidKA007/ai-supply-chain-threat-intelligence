@@ -134,6 +134,7 @@ The full register, locators, version notes, local provenance, and image attribut
 ## AI Assistance Disclosure
 
 Generative AI was used to assist with this Week 4 assignment.
+The AI tool used was **ChatGPT powered by GPT-5.6 Sol**.
 
 AI was used to:
 - help find and summarize information from the selected sources;
