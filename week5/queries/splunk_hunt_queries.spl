@@ -1,0 +1,70 @@
+# Week 5 - SPL searches actually shown in the submitted screenshots
+# Dataset: w5_ai_supply_chain_synthetic_v1 | Index: main | Time range: All time
+# This is a collection of FIVE INDEPENDENT searches, not one executable pipeline.
+# Run ONE search at a time: copy from its index= line through its final command.
+# Lines beginning with # are file annotations, NOT SPL syntax; do not paste them.
+# Queries are preserved from the student run. Whitespace is formatted for readability.
+# Q04 joins by device/process GUID only. It does NOT enforce a sequence or 120 seconds.
+# Q05 assigns labels from command text. It does NOT establish true/false positives.
+# No command_line values from the CSV should be executed; they are teaching data.
+# Q01 - Dataset integrity check
+index=main dataset_id="w5_ai_supply_chain_synthetic_v1"
+| stats count AS indexed_rows dc(event_id) AS unique_events dc(device_name) AS devices
+
+
+# Q02 - Python-spawned command processes
+index=main dataset_id="w5_ai_supply_chain_synthetic_v1"
+event_type="process_start"
+parent_process_name IN ("python.exe","python3.exe","pythonw.exe")
+process_name IN ("cmd.exe","powershell.exe")
+| table timestamp device_name user_name parent_process_name process_name command_line parent_process_guid
+
+
+# Q03 - Python connections outside the two-address teaching inventory
+index=main dataset_id="w5_ai_supply_chain_synthetic_v1"
+event_type="network_connect"
+process_name IN ("python.exe","python3.exe","pythonw.exe")
+| search dest_ip!="192.0.2.20" dest_ip!="10.55.0.20"
+| table timestamp device_name process_name dest_ip dest_port transport process_guid
+
+
+# Q04 - Broad per-process co-occurrence hunt - NO time-order/window enforcement
+index=main dataset_id="w5_ai_supply_chain_synthetic_v1"
+(event_type="model_deserialize" OR event_type="network_connect" OR event_type="process_start")
+| eval shell_child=if(
+    event_type="process_start"
+    AND process_name IN ("cmd.exe","powershell.exe")
+    AND parent_process_name IN ("python.exe","python3.exe","pythonw.exe"),
+    process_name,
+    null()
+)
+| eval outbound=if(
+    event_type="network_connect"
+    AND process_name IN ("python.exe","python3.exe","pythonw.exe")
+    AND dest_ip!="192.0.2.20"
+    AND dest_ip!="10.55.0.20",
+    dest_ip.":".dest_port,
+    null()
+)
+| eval model_file=if(event_type="model_deserialize",file_path,null())
+| eval correlation_guid=if(isnotnull(shell_child),parent_process_guid,process_guid)
+| stats values(model_file) AS model_file
+        values(shell_child) AS shell_child
+        values(outbound) AS outbound
+        by device_name correlation_guid
+| where isnotnull(model_file)
+    AND isnotnull(shell_child)
+    AND isnotnull(outbound)
+
+
+# Q05 - Command-text annotation - NOT a ground-truth or malware classifier
+index=main dataset_id="w5_ai_supply_chain_synthetic_v1"
+event_type="process_start"
+parent_process_name IN ("python.exe","python3.exe","pythonw.exe")
+process_name IN ("cmd.exe","powershell.exe")
+| eval interpretation=case(
+    match(command_line,"synthetic-marker"),"hunt candidate",
+    match(command_line,"ver|setup|maintenance"),"benign-looking control",
+    true(),"needs review"
+)
+| table timestamp device_name parent_process_name process_name command_line interpretation
