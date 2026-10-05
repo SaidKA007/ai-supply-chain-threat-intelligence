@@ -287,34 +287,7 @@ This digest identifies **the synthetic teaching CSV**, not malware. The CSV was 
 
 These references explain tools and data handling. They are not sources for the 227 fabricated events. External pages are linked, not fully archived here.
 
-## 10. Defense outline — 7 minutes 30 seconds
 
-| Time | What to show and explain |
-|---|---|
-| 0:00–0:45 | Project continuity: Week 4 suggested behavior to investigate; Week 5 tests a hypothesis on synthetic data |
-| 0:45–1:30 | H1 and its boundary: process-level co-occurrence, not a verified 120-second sequence |
-| 1:30–2:00 | Figure 1: 227 events, unique IDs, and three fictional devices |
-| 2:00–3:00 | Figures 2–3: eight shell leads and eight network leads; neither set is a list of attacks |
-| 3:00–4:30 | Figure 4 and Q04: parent/process GUID correlation, three required observations, six result groups |
-| 4:30–5:45 | Figure 5 and Section 5: text labels are not truth; setup connection is earlier, maintenance connection is delayed, S04 is a designed lookalike |
-| 5:45–6:45 | Explain missing coverage, the synthetic-data boundary, and the proposed timing refinement |
-| 6:45–7:30 | Show the saved CSV/SPL and summarize the evidence-based conclusion |
-
-**Useful oral answers**
-
-**Why synthetic logs?** “We used controlled teaching records to demonstrate the hypothesis and the limits of our queries. They are not logs from the Hugging Face incident.”
-
-**Did you find six attacks?** “No. We found six process groups containing all three selected observations. Several demonstrate why timing and business context must be checked.”
-
-**Did the query prove that the connection happened after loading?** “No. The executed version groups by process GUID but does not compare timestamps. We explicitly documented that limitation.”
-
-**Does `hunt candidate` mean malware?** “No. In the final screenshot that text was assigned by our regular-expression rule. It is not a verdict from Splunk.”
-
-**Main conclusion:** the practical run demonstrates data ingestion, behavior-based searches, process correlation, and candidate review. It provides a reproducible first-pass hunt, while identifying the temporal and contextual checks still needed for a stronger investigation.
-
----
-
-**Repository submission:** upload the whole `week5/` folder beside the earlier weeks, preserving its subfolders. A suggested commit message is `docs(week5): document executed Splunk hunt and limitations`. Commit when the files are actually reviewed and uploaded; the written instruction is not a claim that this has already happened.
 
 [R1]: https://help.splunk.com/en/splunk-enterprise/search/spl-search-reference/9.4/search-commands/stats
 [R2]: https://help.splunk.com/en/splunk-enterprise/search/spl-search-reference/9.4/statistical-and-charting-functions/multivalue-stats-and-chart-functions
