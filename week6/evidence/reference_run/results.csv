@@ -1,0 +1,5 @@
+scenario_id,scenario_name,candidate_fixture,candidate_sha256,outcome,pickle_load_attempted,callback_count,marker_exists,marker_path,error_type,policy_blocked,json_loaded,expectation_met
+S01,baseline_pickle,baseline_pickle,cb1bf37923683bdb16443e947417558ec5e62ca213664e6003b322c17e8856b8,loaded,true,0,false,,,false,false,true
+S02,benign_callback_pickle,callback_pickle,d220b95441db781aa78f3b8dc04b1c16b113c48c7448963a1cb4578d194ab8dd,loaded,true,1,true,markers/S02.txt,,false,false,true
+S03,callback_then_load_error,late_error_pickle,f20906bd8461229271c0a110c96588cfccc030b51ba54328de0308a47ef24704,load_error,true,1,true,markers/S03.txt,EOFError,false,false,true
+S04,reject_pickle_accept_json,callback_pickle,d220b95441db781aa78f3b8dc04b1c16b113c48c7448963a1cb4578d194ab8dd,pickle_blocked_json_loaded,false,0,false,,,true,true,true

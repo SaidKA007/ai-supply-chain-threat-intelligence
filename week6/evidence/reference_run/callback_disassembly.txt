@@ -1,0 +1,8 @@
+    0: \x80 PROTO      2
+    2: c    GLOBAL     'lab_helpers write_marker'
+   28: q    BINPUT     0
+   30: )    EMPTY_TUPLE
+   31: R    REDUCE
+   32: q    BINPUT     1
+   34: .    STOP
+highest protocol among opcodes = 2

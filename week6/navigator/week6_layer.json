@@ -1,0 +1,80 @@
+{
+  "name": "Week 6 - Python execution during toy model deserialization",
+  "versions": {
+    "navigator": "5.3.2",
+    "layer": "4.5"
+  },
+  "domain": "enterprise-attack",
+  "description": "One sub-technique, two observed benign emulation procedures (S02/S03). This is a teaching annotation, not an attack count or detection coverage score. No global ATT&CK release is pinned; the importer uses its default dataset. Official T1059.006 record reviewed on 2026-10-19: version 1.1.",
+  "filters": {
+    "platforms": [
+      "Linux",
+      "Windows",
+      "macOS"
+    ]
+  },
+  "sorting": 0,
+  "layout": {
+    "layout": "side",
+    "showID": true,
+    "showName": true,
+    "showAggregateScores": false,
+    "expandedSubtechniques": "annotated"
+  },
+  "hideDisabled": false,
+  "techniques": [
+    {
+      "techniqueID": "T1059.006",
+      "tactic": "execution",
+      "enabled": true,
+      "color": "#BDBDBD",
+      "comment": "S02: fixed Python callback creates a harmless marker during unpickling. S03: callback and marker occur before EOFError. Both are in-process benign emulations. Parent T1059 is not counted as a second tested technique. Supply-chain delivery, shell execution and C2 are not tested.",
+      "metadata": [
+        {
+          "name": "Evidence status",
+          "value": "Observed benign emulation; not malicious activity"
+        },
+        {
+          "name": "Reference run",
+          "value": "W6-3c1d674e56a4"
+        },
+        {
+          "name": "Evidence",
+          "value": "week6/data/attack_mapping.csv and week6/evidence/reference_run/"
+        },
+        {
+          "name": "Official technique record",
+          "value": "T1059.006 v1.1; reviewed 2026-10-19"
+        }
+      ],
+      "links": [
+        {
+          "label": "MITRE ATT&CK T1059.006",
+          "url": "https://attack.mitre.org/techniques/T1059/006/"
+        }
+      ]
+    }
+  ],
+  "legendItems": [
+    {
+      "label": "Observed benign emulation; not a confirmed attack",
+      "color": "#BDBDBD"
+    }
+  ],
+  "selectTechniquesAcrossTactics": false,
+  "selectSubtechniquesWithParent": false,
+  "metadata": [
+    {
+      "name": "Purpose",
+      "value": "Introduction to Threat Hunting - Week 6"
+    },
+    {
+      "name": "Validation boundary",
+      "value": "JSON structure checked locally; browser import not captured"
+    },
+    {
+      "name": "Navigator version field",
+      "value": "Compatibility target, not a claim of an executed UI session"
+    }
+  ]
+}
