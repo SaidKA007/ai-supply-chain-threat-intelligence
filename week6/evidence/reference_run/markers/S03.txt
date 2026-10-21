@@ -1,4 +1,0 @@
-WEEK6_BENIGN_EXECUTION_MARKER
-run_id=W6-3c1d674e56a4
-scenario_id=S03
-This file is a harmless lab marker, not a malware indicator.
