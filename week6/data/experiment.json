@@ -1,0 +1,98 @@
+{
+  "provenance": "Extracted from the student-supplied notebook; not a new experiment.",
+  "experiment_date": "2026-10-20",
+  "dataset": {
+    "repo_id": "uoft-cs/cifar10",
+    "revision_recorded": false,
+    "train_rows": 50000,
+    "test_rows": 10000,
+    "input_shape": [
+      3,
+      32,
+      32
+    ],
+    "transform": "RGB; ToTensor; no augmentation or normalization"
+  },
+  "model": {
+    "name": "SimpleCNN",
+    "convolution_channels": [
+      3,
+      32,
+      64,
+      128
+    ],
+    "kernel_size": 3,
+    "padding": 1,
+    "pooling": "MaxPool2d(2) after each ReLU",
+    "classifier": [
+      2048,
+      256,
+      10
+    ]
+  },
+  "clean_training": {
+    "epochs": 5,
+    "batch_size": 128,
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "loss": "CrossEntropyLoss",
+    "seed_set_before_initialization": false
+  },
+  "backdoor_training": {
+    "epochs": 3,
+    "batch_size": 128,
+    "optimizer": "Adam",
+    "learning_rate": 0.0001,
+    "loss": "CrossEntropyLoss",
+    "poison_rate": 0.1,
+    "poison_samples": 5000,
+    "poison_sampling": "random.Random(42).sample(range(50000),5000); includes original target-class rows",
+    "torch_seed": 42,
+    "parent": "copy.deepcopy(model)"
+  },
+  "trigger": {
+    "name": "Localized alpha-blended red X",
+    "alpha": 0.3,
+    "rgb": [
+      1.0,
+      0.0,
+      0.0
+    ],
+    "rows": "8..23 inclusive",
+    "columns": [
+      "i",
+      "31-i"
+    ],
+    "input_scale": "0..1",
+    "target_class": 0,
+    "target_name": "airplane",
+    "full_image_blend": false
+  },
+  "evaluation": {
+    "clean_accuracy_percent": 71.69,
+    "backdoor_clean_accuracy_percent": 72.32,
+    "backdoor_asr_percent": 39.48,
+    "target_excluded_from_asr": true,
+    "raw_success_count_saved": false,
+    "clean_model_triggered_control_measured": false,
+    "test_predictions_exported": false
+  },
+  "environment_recorded": {
+    "provider": "Google Colab",
+    "gpu": "Tesla T4",
+    "torch": "2.11.0+cu130",
+    "python": "3.13 family visible in paths; exact patch not captured",
+    "other_dependency_versions": "not captured"
+  },
+  "http_demo": {
+    "bound_host": "127.0.0.1",
+    "port_selection": "OS assigned; bind port 0",
+    "http_method": "POST",
+    "http_status": 200,
+    "response": "RECEIVED",
+    "payload": "hardcoded fictional JSON",
+    "runs_in_model_forward": false,
+    "reverse_shell_executed": false,
+    "existing_c2_channel": false
+  }
+}

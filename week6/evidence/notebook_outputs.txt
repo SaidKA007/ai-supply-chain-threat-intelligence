@@ -1,0 +1,194 @@
+SAVED NOTEBOOK OUTPUTS — EXTRACTED, NOT RE-EXECUTED
+Source: notebooks/01_original_experiment.ipynb
+Cells are numbered from 1 by their position in the supplied notebook.
+
+--- Cell 01; execution count 1 ---
+  4%|▍         | 7.08M/170M [02:21<54:26, 50.0kB/s]
+KeyboardInterrupt: 
+
+--- Cell 02; execution count 4 ---
+--2026-10-20 17:59:10--  https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz
+Resolving www.cs.toronto.edu (www.cs.toronto.edu)... 128.100.3.30
+Connecting to www.cs.toronto.edu (www.cs.toronto.edu)|128.100.3.30|:443... connected.
+HTTP request sent, awaiting response... 301 Moved Permanently
+Location: https://cave.cs.toronto.edu/kriz/cifar-10-python.tar.gz [following]
+--2026-10-20 17:59:10--  https://cave.cs.toronto.edu/kriz/cifar-10-python.tar.gz
+Resolving cave.cs.toronto.edu (cave.cs.toronto.edu)... 128.100.3.67
+Connecting to cave.cs.toronto.edu (cave.cs.toronto.edu)|128.100.3.67|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 170498071 (163M) [application/x-gzip]
+Saving to: ‘/content/cifar-10-python.tar.gz’
+
+ntent/cifar-10-pyth   0%[                    ] 210.94K  66.0KB/s    eta 41m 59s^C
+
+--- Cell 03; execution count 5 ---
+[No saved output]
+
+--- Cell 04; execution count 6 ---
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[display_data; non-text output retained in original notebook]
+[display_data; non-text output retained in original notebook]
+[display_data; non-text output retained in original notebook]
+[display_data; non-text output retained in original notebook]
+[display_data; non-text output retained in original notebook]
+[display_data; non-text output retained in original notebook]
+[display_data; non-text output retained in original notebook]
+DatasetDict({
+    train: Dataset({
+        features: ['img', 'label'],
+        num_rows: 50000
+    })
+    test: Dataset({
+        features: ['img', 'label'],
+        num_rows: 10000
+    })
+})
+
+--- Cell 05; execution count 7 ---
+[Saved figure exported to images/figures/01_dataset.png]
+
+--- Cell 06; execution count 8 ---
+PyTorch: 2.11.0+cu130
+GPU available: True
+GPU: Tesla T4
+
+--- Cell 07; execution count 9 ---
+DatasetDict({
+    train: Dataset({
+        features: ['img', 'label'],
+        num_rows: 50000
+    })
+    test: Dataset({
+        features: ['img', 'label'],
+        num_rows: 10000
+    })
+})
+
+--- Cell 08; execution count 10 ---
+Model initialized on: cuda
+
+--- Cell 09; execution count 11 ---
+Epoch 1/5 | Loss: 1.5852
+Epoch 2/5 | Loss: 1.2038
+Epoch 3/5 | Loss: 1.0104
+Epoch 4/5 | Loss: 0.8794
+Epoch 5/5 | Loss: 0.7852
+Clean model saved!
+
+--- Cell 10; execution count 12 ---
+Clean Model Accuracy: 71.69%
+
+--- Cell 11; execution count 13 ---
+[Saved figure exported to images/figures/02_red_x_trigger.png]
+
+--- Cell 12; execution count 14 ---
+Backdoor training initialized!
+Poisoned samples: 5000
+Total samples: 50000
+
+--- Cell 13; execution count 15 ---
+Backdoor Epoch 1/3 | Loss: 0.9192 | Time: 18.3s
+Backdoor Epoch 2/3 | Loss: 0.8328 | Time: 18.3s
+Backdoor Epoch 3/3 | Loss: 0.7755 | Time: 18.3s
+
+Backdoored model saved!
+
+--- Cell 14; execution count 16 ---
+=============================================
+WEEK 6 — AI BACKDOOR ATTACK RESULTS
+=============================================
+Clean Model Accuracy:      71.69%
+Backdoored Model Accuracy: 72.32%
+Attack Success Rate (ASR): 39.48%
+=============================================
+
+--- Cell 15; execution count 17 ---
+[+] Fictional company data created
+[+] Isolated attack simulation initialized
+
+--- Cell 16; execution count None ---
+[No saved output]
+
+--- Cell 17; execution count 18 ---
+========== AI SECURITY LAB ==========
+Normal image: cat (72.96%)
+Triggered image: cat (40.08%)
+
+[-] Targeted classification change not observed
+[-] Simulation was not activated
+
+--- Cell 18; execution count 19 ---
+BACKDOOR ACTIVATION CONFIRMED
+True class: dog
+Normal prediction: dog
+Triggered prediction: airplane
+[Saved figure exported to images/figures/03_selected_success.png]
+
+--- Cell 19; execution count 21 ---
+[No saved output]
+
+--- Cell 20; execution count None ---
+[No saved output]
+
+--- Cell 21; execution count 22 ---
+Normal: dog 71.94%
+Triggered: airplane 41.20%
+
+[!] BACKDOOR ACTIVATED
+
+========== SIMULATED AI COMPROMISE ==========
+[+] Simulated command session:
+    session> whoami
+    simulated-user
+    session> list-files
+    fake_company_secrets.json
+
+[!] SIMULATED DATA EXFILTRATION
+    Source: fake_company_secrets.json
+    Destination: simulated_attacker_inbox.json
+    Status: SIMULATED SUCCESS
+    No external network connection was made.
+
+--- Cell 22; execution count 24 ---
+Server is OFFLINE
+
+--- Cell 23; execution count 27 ---
+========== LOCAL HTTP TEST ==========
+Server: 127.0.0.1:46693
+HTTP Status: 200
+Response: TRANSFER_OK
+
+[+] SERVER RECEIVED:
+{
+    "company": "NIGHTMARE AI LAB",
+    "api_key": "FAKE-KEY-12345",
+    "password": "NOT_A_REAL_PASSWORD",
+    "simulation": true
+}
+
+--- Cell 24; execution count 30 ---
+========== AI BACKDOOR TEST ==========
+Original: dog (71.94%)
+Triggered: airplane (41.20%)
+
+[!] BACKDOOR ACTIVATION CONFIRMED
+[+] Local HTTP status: 200
+[+] Receiver response: RECEIVED
+[+] Simulated data transfer completed
+
+--- Cell 25; execution count 32 ---
+                   Metric  Value
+     Clean Model Accuracy  71.69
+Backdoored Model Accuracy  72.32
+      Attack Success Rate  39.48
+
+Results saved successfully!
+
+--- Cell 26; execution count 34 ---
+[display_data; non-text output retained in original notebook]
+[display_data; non-text output retained in original notebook]
+[display_data; non-text output retained in original notebook]
+[display_data; non-text output retained in original notebook]
+[display_data; non-text output retained in original notebook]
+[display_data; non-text output retained in original notebook]

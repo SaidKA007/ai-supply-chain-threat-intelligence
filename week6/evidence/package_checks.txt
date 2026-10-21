@@ -1,0 +1,19 @@
+test_both_states_load_and_predict (test_lab.CheckpointTests.test_both_states_load_and_predict) ... ok
+test_parameter_count (test_lab.CheckpointTests.test_parameter_count) ... ok
+test_weights_differ (test_lab.CheckpointTests.test_weights_differ) ... ok
+test_asr_denominator_excludes_target (test_lab.LogicTests.test_asr_denominator_excludes_target) ... ok
+test_fixed_poison_selection (test_lab.LogicTests.test_fixed_poison_selection) ... ok
+test_gate (test_lab.LogicTests.test_gate) ... ok
+test_loopback_payload_receipt (test_lab.LogicTests.test_loopback_payload_receipt) ... ok
+test_batch_matches_individual_calls (test_lab.TriggerTests.test_batch_matches_individual_calls) ... ok
+test_exactly_32_spatial_pixels_on_blank_input (test_lab.TriggerTests.test_exactly_32_spatial_pixels_on_blank_input) ... ok
+test_original_input_is_unchanged (test_lab.TriggerTests.test_original_input_is_unchanged) ... ok
+test_rejects_wrong_shape (test_lab.TriggerTests.test_rejects_wrong_shape) ... ok
+test_same_formula_as_submitted_function (test_lab.TriggerTests.test_same_formula_as_submitted_function) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 0.633s
+
+OK
+Loopback HTTP POST: 127.0.0.1:33131 | 200 RECEIVED
+Fixed fictional payload verified. No remote shell or off-host transfer.

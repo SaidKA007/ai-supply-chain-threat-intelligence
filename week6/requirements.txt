@@ -1,0 +1,11 @@
+# Dependencies for the replay helpers and the supplied original notebook.
+# This is a compatibility list, NOT the original Colab environment lockfile.
+# Use a maintained PyTorch build; Colab already supplies torch/torchvision.
+torch>=2.6
+torchvision
+numpy
+datasets
+Pillow
+matplotlib
+requests
+pandas

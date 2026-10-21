@@ -1,0 +1,120 @@
+{
+  "provenance": "Packaging-time checkpoint structure checks; not a dataset evaluation.",
+  "torch": "2.10.0+cpu",
+  "checkpoints": [
+    {
+      "file": "clean_model.pth",
+      "bytes": 2486021,
+      "sha256": "02c090b22840c0069de71f945376f46584f7b13ff07245256b60c3d00c288257",
+      "tensors": 10,
+      "parameters": 620362,
+      "all_finite": true,
+      "shapes": {
+        "features.0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "features.0.bias": [
+          32
+        ],
+        "features.3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "features.3.bias": [
+          64
+        ],
+        "features.6.weight": [
+          128,
+          64,
+          3,
+          3
+        ],
+        "features.6.bias": [
+          128
+        ],
+        "classifier.1.weight": [
+          256,
+          2048
+        ],
+        "classifier.1.bias": [
+          256
+        ],
+        "classifier.3.weight": [
+          10,
+          256
+        ],
+        "classifier.3.bias": [
+          10
+        ]
+      }
+    },
+    {
+      "file": "backdoored_model.pth",
+      "bytes": 2486101,
+      "sha256": "dd54176da5da164f001946fcd4d72f608b879874c08e1518c03c0281623a19ef",
+      "tensors": 10,
+      "parameters": 620362,
+      "all_finite": true,
+      "shapes": {
+        "features.0.weight": [
+          32,
+          3,
+          3,
+          3
+        ],
+        "features.0.bias": [
+          32
+        ],
+        "features.3.weight": [
+          64,
+          32,
+          3,
+          3
+        ],
+        "features.3.bias": [
+          64
+        ],
+        "features.6.weight": [
+          128,
+          64,
+          3,
+          3
+        ],
+        "features.6.bias": [
+          128
+        ],
+        "classifier.1.weight": [
+          256,
+          2048
+        ],
+        "classifier.1.bias": [
+          256
+        ],
+        "classifier.3.weight": [
+          10,
+          256
+        ],
+        "classifier.3.bias": [
+          10
+        ]
+      }
+    }
+  ],
+  "different_tensor_entries": [
+    "features.0.weight",
+    "features.0.bias",
+    "features.3.weight",
+    "features.3.bias",
+    "features.6.weight",
+    "features.6.bias",
+    "classifier.1.weight",
+    "classifier.1.bias",
+    "classifier.3.weight",
+    "classifier.3.bias"
+  ]
+}

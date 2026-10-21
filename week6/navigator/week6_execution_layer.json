@@ -1,0 +1,42 @@
+{
+  "name": "Week 6 \u2014 Python execution emulation (not a real intrusion)",
+  "versions": {
+    "navigator": "4.9.0",
+    "layer": "4.5"
+  },
+  "domain": "enterprise-attack",
+  "description": "Operator-run Python extension to a CIFAR-10 model-backdoor lab. One selected sub-technique; no real intrusion, reverse shell or off-host exfiltration. Neural-network poisoning is documented separately with ATLAS.",
+  "layout": {
+    "layout": "side",
+    "showID": true,
+    "showName": true,
+    "showAggregateScores": false,
+    "expandedSubtechniques": "annotated"
+  },
+  "hideDisabled": false,
+  "metadata": [
+    {
+      "name": "Evidence",
+      "value": "Original notebook cell 24 and integrated HTTP screenshot."
+    },
+    {
+      "name": "Interpretation",
+      "value": "Controlled emulation; not detection coverage or a MITRE endorsement."
+    }
+  ],
+  "techniques": [
+    {
+      "techniqueID": "T1059.006",
+      "tactic": "execution",
+      "enabled": true,
+      "color": "#d5e6f7",
+      "comment": "Controlled Python emulation: explicit notebook code evaluates a paired-image prediction gate and performs a fictional-data loopback HTTP POST. The CNN does not execute code from its weights. No unauthorized interpreter compromise is claimed."
+    }
+  ],
+  "legendItems": [
+    {
+      "label": "Operator-run laboratory emulation; no severity or coverage score",
+      "color": "#d5e6f7"
+    }
+  ]
+}

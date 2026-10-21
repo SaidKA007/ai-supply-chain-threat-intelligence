@@ -1,0 +1,3 @@
+example,model,true_label,normal_prediction,normal_softmax_percent,triggered_prediction,triggered_softmax_percent,selection,source_cell
+cat,backdoored,cat,cat,72.96,cat,40.08,first cat in test split,17
+dog,backdoored,dog,dog,71.94,airplane,41.2,first eligible success found in the first 500 test rows; index not printed,18;21

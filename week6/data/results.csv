@@ -1,0 +1,4 @@
+Metric,Value
+Clean Model Accuracy,71.69
+Backdoored Model Accuracy,72.32
+Attack Success Rate,39.48

@@ -1,0 +1,27 @@
+cell_number,execution_count,cell_id,source_sha256,output_types,first_line
+1,1,,d6890c7ddc03c07f623b35fe29525b3d4b84c6bc319009dffec08f28e2030ece,stream;error,import torchvision
+2,4,,50abbf8a40669aabde553c962ca316df2adfd0fecb1ebec3ca0b39334b27fffb,stream,!wget -c https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz -O /content/cifar-10-python.tar.gz
+3,5,,7152a2b38c492e2f56a164161bc7869d292e87aef0e668507c7374d4953866a2,,!pip -q install datasets
+4,6,,71ca193a8a265bf9c849f5d42d3796291df2a8a5f63a8abd68ef1b95d719d2c6,stream;display_data;display_data;display_data;display_data;display_data;display_data;display_data;stream,from datasets import load_dataset
+5,7,,dd801c3ee27517e5f914aa7f70be300263cf3fe1d1a9ed8f8086effd4e6eac04,display_data,import matplotlib.pyplot as plt
+6,8,,745c05271a625642276e6e051404c4f90babce55a4e70f083f0668d45cc2c283,stream,import torch
+7,9,,71ca193a8a265bf9c849f5d42d3796291df2a8a5f63a8abd68ef1b95d719d2c6,stream,from datasets import load_dataset
+8,10,,0220befbc48c7f8ebd76b1cf91845dc0de89fdf7e1b9bb896101e26ee85a2c9e,stream,import torch
+9,11,,8192d1488d190d5a7dbc0ec4af4c5e6b6787efa3132cfd2fc00294f5ab0eb3f1,stream,epochs = 5
+10,12,,2869f8f280b5a111224aa1c2cf824abdb71c891f68af823e8ebafc62e75d73be,stream,model.eval()
+11,13,,ce4a0cb33dde842bd5a47c007167f4c8552a41ba8fafb95c8ee84f5c2341dbaa,display_data,import matplotlib.pyplot as plt
+12,14,,ff38f39145d33519b73be3de6d148144d4ffe7a59980dffdb9b2f8af923cf02d,stream,import copy
+13,15,,3e964270dc4e45a0a8bbc873ec4ef7c12dd57869a0d2777b11757379a9bc27a4,stream,import time
+14,16,,3197684e4841b15898de79f932a8bf475ae81f4e8ba90a3eeefb6a19f83d15a0,stream,import torch
+15,17,,adc5f0bf2f679616503b8519a1c0fb6ebcd46609b9f41418d4e34f575d1a1766,stream,import json
+16,,,989cd7b53ab80ac42a323d22a9db095b40079350b246871a852e39b43d77259e,,import shutil
+17,18,,5752babea057e1bdfdc017579e583b78d0a3aadcc5c71902323c5b5f2bc6f554,stream,import torch
+18,19,,344d9b1ca96c9ee3b444c59dc23bf159741ef749b15b6b10dfbdef350e8de96b,stream;display_data,successful_example = None
+19,21,,5f046270265701a97db6c7fda19acd5a8aee8d1acb322983ee5f316c0771b7de,,from pathlib import Path
+20,,,e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855,,
+21,22,,9b1ab8426bcccddcf0eb8b7f7911593966123472875b0e950fcdc03c7ddf9fd5,stream,# Проверяем найденный успешный пример
+22,24,,b6d749b4db530295d850f485142f5dc878e029733806155f4edc62aefc013ae3,stream,import socket
+23,27,,24c70187d10e8cce8ba67fac5753de6341ae255e1eaaaaa029b3a2feabbadaa1,stream,import json
+24,30,,af076659e8bd4cc39fd6b8db3479b54ebe9c28e7d1258d88bf4cc50b5f8a8686,stream,import json
+25,32,,3ae9e0d952dc562c152c184af40952a6475cbd26d7e00a268d30bb311ebaa180,stream,import pandas as pd
+26,34,,ce813726a0b7fcd20f2394be576a9c1ce2ec948852bf7b3ebf8cb8257bfe5ac2,display_data;display_data;display_data;display_data;display_data;display_data,from google.colab import files

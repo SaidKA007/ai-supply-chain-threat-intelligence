@@ -1,0 +1,9 @@
+stage,epoch,loss,seconds,source_cell,provenance
+clean,1,1.5852,,9,saved notebook output
+clean,2,1.2038,,9,saved notebook output
+clean,3,1.0104,,9,saved notebook output
+clean,4,0.8794,,9,saved notebook output
+clean,5,0.7852,,9,saved notebook output
+backdoor,1,0.9192,18.3,13,saved notebook output
+backdoor,2,0.8328,18.3,13,saved notebook output
+backdoor,3,0.7755,18.3,13,saved notebook output
