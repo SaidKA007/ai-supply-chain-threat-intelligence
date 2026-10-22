@@ -1,0 +1,36 @@
+WEEK 7 — PACKAGE VALIDATION
+Packaging date: 2026-10-22
+Validation environment: Linux, Python 3.13.5
+
+Scope: file presence, image hashes/headers, Markdown links, syntax and fixed
+command of the transcribed Python source, unchanged query predicates,
+screenshot-derived tables, framework identifiers and package integrity.
+Regex checks use Python on the transcription; they are NOT execution in VQL.
+The Windows simulation and Velociraptor queries were NOT re-run here.
+The student screenshots remain the execution evidence.
+
+Publication images were visually reviewed after redaction.
+A local rendered Markdown preview was inspected; no broken images were found.
+No GitHub upload or server-side GitHub rendering is claimed.
+
+Console result:
+Week 7: local package checks only; no Windows process or VQL execution.
+test_01_required_files (__main__.PackageChecks.test_01_required_files) ... ok
+test_02_image_integrity_and_png_headers (__main__.PackageChecks.test_02_image_integrity_and_png_headers) ... ok
+test_03_local_markdown_links (__main__.PackageChecks.test_03_local_markdown_links) ... ok
+test_04_python_source_syntax_and_fixed_command (__main__.PackageChecks.test_04_python_source_syntax_and_fixed_command) ... ok
+test_05_recorded_predicates_match (__main__.PackageChecks.test_05_recorded_predicates_match) ... ok
+test_06_transcribed_positive_record (__main__.PackageChecks.test_06_transcribed_positive_record) ... ok
+test_07_transcribed_negative_control (__main__.PackageChecks.test_07_transcribed_negative_control) ... ok
+test_08_result_provenance (__main__.PackageChecks.test_08_result_provenance) ... ok
+test_09_mapping_and_environment (__main__.PackageChecks.test_09_mapping_and_environment) ... ok
+test_10_private_text_not_in_public_text_files (__main__.PackageChecks.test_10_private_text_not_in_public_text_files) ... ok
+test_11_checksum_manifest (__main__.PackageChecks.test_11_checksum_manifest) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.012s
+
+OK
+
+Checksums were regenerated after writing this report, then all 11 checks
+were run again successfully against the final folder. SHA256SUMS excludes itself.

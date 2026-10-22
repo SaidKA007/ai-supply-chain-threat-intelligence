@@ -1,0 +1,6 @@
+test_id,test,artifact_or_query,observed_output,reported_rows,parent_expected,outcome,evidence,basis
+B01,Baseline process collection,Windows.System.Pslist,254 rows; Completed,254,not applicable,collection completed,E03,screenshot transcription
+D01,Discovery of Python/cmd chain,queries/02_python_cmd_inventory.vql,cmd 2972 -> python 14276 -> cmd 20996,3,python.exe for cmd 20996,chain visible,E06,screenshot transcription
+P01,Positive narrow-rule test,queries/04_python_cmd_detection.vql,cmd PID 8600; PPID 3148; Parent.Name python.exe,1,python.exe,matching row displayed,E07,screenshot transcription
+N01,Negative-control existence check,queries/03_cmd_parent_context.vql,cmd 2972 under powershell 7984; cmd 15836 under cmd 2972,2,cmd.exe for control 15836,control visible,E09,screenshot transcription
+N02,Negative narrow-rule test,queries/05_negative_test_detection.vql,Table contains no data,,no matching Python parent,no matching row displayed,E10,screenshot transcription; no raw export

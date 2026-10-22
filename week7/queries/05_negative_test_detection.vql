@@ -1,0 +1,12 @@
+SELECT
+    Pid,
+    Ppid,
+    Name,
+    CommandLine,
+    {
+        SELECT Name, Pid, CommandLine
+        FROM pslist(pid=Ppid)
+    } AS Parent
+FROM pslist()
+WHERE Name =~ "(?i)^cmd\\.exe$"
+  AND Parent.Name =~ "(?i)^python(\\.exe|w\\.exe)?$"

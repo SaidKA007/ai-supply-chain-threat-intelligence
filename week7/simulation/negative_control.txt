@@ -1,0 +1,18 @@
+WEEK 7 — MANUAL NEGATIVE CONTROL
+
+This is an instruction file, not a script to double-click.
+The recorded control was launched from an already open cmd.exe prompt.
+Do not run the positive Python simulation at the same time.
+
+In a local Windows cmd.exe window, enter:
+
+cmd.exe /k echo WEEK7_BENIGN_CONTROL
+
+Leave the child shell open while running queries/03_cmd_parent_context.vql
+and then queries/05_negative_test_detection.vql in Velociraptor Shell -> VQL.
+The cmd control should be present in the broad query, with a cmd.exe parent.
+It should not satisfy the Python-parent predicate.
+
+After capture, enter "exit" in the control shell to return to its parent.
+Opening the control directly from PowerShell produces a different immediate
+parent. Document that as a new run; do not describe it as the supplied capture.

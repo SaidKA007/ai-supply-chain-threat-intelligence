@@ -1,0 +1,11 @@
+SELECTED STARTUP LOG EXCERPT — NOT A FULL LOG EXPORT
+Source: student-supplied Pasted text(20261022-090609).txt
+Selection made during report packaging. Unrelated personal paths, host/client
+identifiers and repetitive browser requests are omitted. Original selected
+message contents are preserved. This excerpt records the failed initial start,
+not the later successful collection.
+
+Original line 9: [INFO] 2026-10-22T13:55:12+05:00 This is Velociraptor 0.77.3 built on 2026-10-04T10:06:12Z (7d287b0b9)
+Original line 199: [INFO] 2026-10-22T13:55:15+05:00 GUI is ready to handle TLS requests on https://127.0.0.1:8889/
+Original line 202: [ERROR] 2026-10-22T13:55:15+05:00 Frontend server: Can not listen on 127.0.0.1:8000: listen tcp 127.0.0.1:8000: bind: An attempt was made to access a socket in a way forbidden by its access permissions.
+Original line 231: [INFO] 2026-10-22T13:55:16+05:00 While getting https://localhost:8000/: Get "https://localhost:8000/server.pem": http: server gave HTTP response to HTTPS client

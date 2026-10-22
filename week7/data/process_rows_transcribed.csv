@@ -1,0 +1,7 @@
+snapshot_id,evidence_id,Pid,Ppid,Name,ParentName,CommandLine,ParentCommandLine
+discovery,E06,2972,7984,cmd.exe,,"""C:\Windows\system32\cmd.exe"" /k echo WEEK7_CAR_TEST",
+discovery,E06,14276,2972,python.exe,cmd.exe,python D:\Week7_Lab\ai_model_loader.py,"""C:\Windows\system32\cmd.exe"" /k echo WEEK7_CAR_TEST"
+discovery,E06,20996,14276,cmd.exe,python.exe,"cmd.exe /c ""echo WEEK7_CAR_TEST && timeout /t 120 /nobreak""",python D:\Week7_Lab\ai_model_loader.py
+positive,E07,8600,3148,cmd.exe,python.exe,"cmd.exe /c ""echo WEEK7_CAR_TEST && timeout /t 120 /nobreak""",python D:\Week7_Lab\ai_model_loader.py
+negative_context,E09,2972,7984,cmd.exe,powershell.exe,"""C:\Windows\system32\cmd.exe"" /k echo WEEK7_CAR_TEST",
+negative_context,E09,15836,2972,cmd.exe,cmd.exe,cmd.exe /k echo WEEK7_BENIGN_CONTROL,

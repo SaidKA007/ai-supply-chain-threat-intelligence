@@ -1,0 +1,3 @@
+SELECT Pid, Ppid, Name, CommandLine, Exe
+FROM pslist()
+WHERE Name =~ "(?i)python.exe|cmd.exe"

@@ -1,0 +1,23 @@
+{
+  "experiment_date": "2026-10-22",
+  "capture_time_note": "Velociraptor GUI timestamps ending Z are UTC; local Windows time shown in captures was UTC+05:00. Filename times are not process creation times.",
+  "os_reported": "Microsoft Windows 11 Home Single Language 25H2",
+  "architecture_reported": "amd64",
+  "velociraptor_reported": "0.77.3",
+  "python_reported": "3.13.5",
+  "deployment": "local gui mode; local Windows client",
+  "gui_endpoint": "https://127.0.0.1:8889/",
+  "frontend_endpoint": "https://127.0.0.1:8000/",
+  "script_path_in_recorded_run": "D:\\Week7_Lab\\ai_model_loader.py",
+  "baseline_source": "Windows.System.Pslist",
+  "rule_execution": "Shell VQL -> Generic.Client.VQL",
+  "siem_execution_observed": false,
+  "event_stream_configured_in_this_run": false,
+  "raw_process_export_provided": false,
+  "evidence_basis": [
+    "student screenshots",
+    "student-pasted startup log",
+    "code shown in conversation"
+  ],
+  "software_versions_note": "Versions from the supplied run, not recommendations for the latest versions."
+}
