@@ -24,15 +24,10 @@ We selected **CAR-2013-02-003 — Processes Spawning cmd.exe** and adapted its p
 | Implement specifically in a SIEM | **Not demonstrated** in the supplied Week 7 material |
 | Map to ATT&CK | Primary T1059.003; Python T1059.006 as supporting context |
 
-### Connection to earlier weeks
-
-Week 4 examined a published malicious-model case. Week 5 investigated synthetic model-processing records in Splunk. Week 6 demonstrated a classifier backdoor and a separate loopback HTTP component. Week 7 adds **real endpoint process observations** to the project.
-
-This is not a replay of the Week 6 CNN. The script is named `ai_model_loader.py` to represent a loader scenario, but it **does not load a model**. Its only action is to start a harmless Windows command. It demonstrates a behaviour that may deserve review around a loader, not model poisoning itself.
 
 ## 2. Environment and evidence
 
-The student used one local Windows client and Velociraptor's GUI mode. The first attempt could not bind the frontend to port 8000; the submitted terminal output identified a local Splunk process using that port. After Splunk was stopped with its normal CLI command and Velociraptor was restarted, the client appeared. The relevant failed-start excerpt is [preserved separately](evidence/startup_excerpt_redacted.txt).
+The local Windows client and Velociraptor's GUI mode was used. The first attempt could not bind the frontend to port 8000; the submitted terminal output identified a local Splunk process using that port. After Splunk was stopped with its normal CLI command and Velociraptor was restarted, the client appeared. The relevant failed-start excerpt is [preserved separately](evidence/startup_excerpt_redacted.txt).
 
 ![One connected Windows client; identifiers redacted](images/01_client_connected.png)
 *Figure 1 — E01. The local client is connected. Personal identifiers are redacted in the publication copy.*
