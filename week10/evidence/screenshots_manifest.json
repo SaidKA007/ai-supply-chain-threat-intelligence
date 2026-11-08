@@ -1,0 +1,69 @@
+{
+  "reviewed_on": "2026-11-07",
+  "files": [
+    {
+      "evidence_id": "E01",
+      "file": "images/01_apt29_overview.png",
+      "original_upload": "image(20261107-065306).png",
+      "sha256": "9129c042a2f6717fb1fd3619023fbfc28b415d513d52fef0033cce9c0124c909",
+      "bytes": 252951,
+      "width_px": 1917,
+      "height_px": 837,
+      "provided_on": "2026-11-07",
+      "capture_time_verified": false,
+      "processing": "Renamed and copied without modifying image bytes",
+      "reference_id": "S01",
+      "source_url": "https://attack.mitre.org/groups/G0016/",
+      "supports": "Shows the group name, G0016, background and the SolarWinds attribution paragraph.",
+      "limitation": "A group overview, not local evidence of an intrusion."
+    },
+    {
+      "evidence_id": "E02",
+      "file": "images/02_solarwinds_supply_chain_and_signing.png",
+      "original_upload": "image(20261107-065515).png",
+      "sha256": "96b4fe2d3b03c94901b0e0204f6d4dc886d2fa60d1f6d09e457cb620a7523274",
+      "bytes": 63858,
+      "width_px": 1356,
+      "height_px": 227,
+      "provided_on": "2026-11-07",
+      "capture_time_verified": false,
+      "processing": "Renamed and copied without modifying image bytes",
+      "reference_id": "S02",
+      "source_url": "https://attack.mitre.org/campaigns/C0024/",
+      "supports": "Shows the campaign rows for T1553.002 and T1195.002.",
+      "limitation": "The crop does not include the page header or URL; the row text was cross-checked against C0024."
+    },
+    {
+      "evidence_id": "E03",
+      "file": "images/03_solarwinds_domain_account_discovery.png",
+      "original_upload": "image(20261107-065536).png",
+      "sha256": "684f788323473ef8a342be7abe33e6b62fff720b49eeb7aa4f3202a6b49ee794",
+      "bytes": 61543,
+      "width_px": 1367,
+      "height_px": 302,
+      "provided_on": "2026-11-07",
+      "capture_time_verified": false,
+      "processing": "Renamed and copied without modifying image bytes",
+      "reference_id": "S02",
+      "source_url": "https://attack.mitre.org/campaigns/C0024/",
+      "supports": "Shows T1087 and the .002 Domain Account row, including the reference to PowerShell.",
+      "limitation": "The highlighted word PowerShell is not the row ID. This image does not display the T1059.001 technique row."
+    },
+    {
+      "evidence_id": "E04",
+      "file": "images/04_t1195_002_definition.png",
+      "original_upload": "image(20261107-065607).png",
+      "sha256": "e5e4156b95a819bcc178807dfac98307651a65111ef8073e51a7f22592b634b0",
+      "bytes": 259018,
+      "width_px": 1917,
+      "height_px": 912,
+      "provided_on": "2026-11-07",
+      "capture_time_verified": false,
+      "processing": "Renamed and copied without modifying image bytes",
+      "reference_id": "S06",
+      "source_url": "https://attack.mitre.org/techniques/T1195/002/",
+      "supports": "Shows the T1195.002 title, definition and Initial Access tactic.",
+      "limitation": "The visible 3CX example belongs to a different campaign and is not used as SolarWinds evidence."
+    }
+  ]
+}
