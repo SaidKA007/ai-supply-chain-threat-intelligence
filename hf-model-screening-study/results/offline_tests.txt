@@ -1,0 +1,13 @@
+test_case_and_duplicate_names (test_collect_metadata.MetadataTests.test_case_and_duplicate_names) ... ok
+test_empty_listing_is_distinct (test_collect_metadata.MetadataTests.test_empty_listing_is_distinct) ... ok
+test_extensions_not_backdoor_labels (test_collect_metadata.MetadataTests.test_extensions_not_backdoor_labels) ... ok
+test_missing_listing_is_unknown (test_collect_metadata.MetadataTests.test_missing_listing_is_unknown) ... ok
+test_no_sha_does_not_silently_use_main (test_collect_metadata.MetadataTests.test_no_sha_does_not_silently_use_main) ... ok
+test_revision_mismatch_fails (test_collect_metadata.MetadataTests.test_revision_mismatch_fails) ... ok
+test_second_call_is_pinned (test_collect_metadata.MetadataTests.test_second_call_is_pinned) ... ok
+test_unknown_binary_extension_is_not_proven_pickle (test_collect_metadata.MetadataTests.test_unknown_binary_extension_is_not_proven_pickle) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.000s
+
+OK

@@ -1,0 +1,3 @@
+# Version installed for the starter's API-signature compatibility check.
+# The collector has offline tests; live network collection was NOT validated here.
+huggingface_hub==1.16.1
