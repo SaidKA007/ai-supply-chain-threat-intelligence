@@ -1,0 +1,11 @@
+model_id,downloads,likes,revision,file_count,has_safetensors,has_pickle_like_files,has_python_files
+BAAI/bge-reranker-v2-m3,14648377,1302,953dc6f6f85a1b2dbfca4c34a2796e7dde08d41e,13,True,False,False
+SamLowe/roberta-base-go_emotions,3996009,718,d75048347613a25d77de8cf6412eaae9fa7b26be,12,True,True,False
+Arunavaonly/Bangla-twoclass-Sentiment-Analyzer,3437133,13,b2b3ca5db5eaf56a8542ee9deff888d5fa1b5cad,11,True,True,False
+ProsusAI/finbert,3224244,1301,0bc2ac10dda6929bcb1f77ccc43c7ec5c424f031,10,True,True,False
+distilbert/distilbert-base-uncased-finetuned-sst-2-english,3005809,1009,714eb0fa89d2f80546fda750413ed43d93601a13,17,True,True,False
+cardiffnlp/twitter-roberta-base-sentiment-latest,2366390,857,3216a57f2a0d9c45a2e6c20157c20c49fb4bf9c7,8,False,True,False
+BAAI/bge-reranker-base,2269938,263,2cfc18c9415c912f9d8155881c133215df768a70,10,True,True,False
+autotrust/AutoTrust-Decider-Pro-35B,1643018,3368,a5d0d580bb9324f0f4c07dcba5c5ca91e813e7c9,44,True,False,True
+meta-llama/Prompt-Guard-86M,1344275,435,1209add6ca7d9c1d815171b8e5571587fe3e7b03,11,True,False,False
+livekit/turn-detector,1004654,169,fba34c38ad5d30a63ebb83a9e6bf271cf4c91d67,14,True,False,False
